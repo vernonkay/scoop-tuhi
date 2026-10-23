@@ -1,0 +1,25 @@
+{
+    "version": "1.0.0",
+    "description": "A fast, cross-platform text & Markdown editor that opens multi-gigabyte files.",
+    "homepage": "https://github.com/vernonkay/tuhi",
+    "license": "MIT OR Apache-2.0",
+    "notes": "tuhi uses the Microsoft Edge WebView2 runtime, which is preinstalled on Windows 11 and current Windows 10. If the window is blank, install 'Evergreen WebView2 Runtime' from Microsoft.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vernonkay/tuhi/releases/download/v1.0.0/tuhi_1.0.0_x64_portable.zip",
+            "hash": "338b5e71f2e9e960adbeba41c8dfabea343b5271cc39735d21beaf8d5c7d8ee0"
+        }
+    },
+    "bin": "tuhi.exe",
+    "shortcuts": [
+        ["tuhi.exe", "tuhi"]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vernonkay/tuhi/releases/download/v$version/tuhi_$version_x64_portable.zip"
+            }
+        }
+    }
+}
